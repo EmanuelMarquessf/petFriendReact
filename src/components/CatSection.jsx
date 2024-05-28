@@ -28,8 +28,8 @@ export default function CatSection() {
       <div className="flex flex-col gap-10">
         <div className="flex flex-row items-center justify-between">
           <div className="flex flex-col itens gap-2">
-            <h1 className="font-bold text-5xl">Adopt</h1>
-            <span className="font-extralight text-3xl">Your Favourite one</span>
+            <h1 className="font-bold text-4xl md:text-5xl">Adopt</h1>
+            <span className="font-extralight text-2xl md:text-3xl">Your Favourite one</span>
           </div>
           <button className="bg-whiteDetail rounded-full w-28 h-16" onClick={moreCats} >New Cats</button>
         </div>
