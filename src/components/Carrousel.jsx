@@ -3,7 +3,7 @@ export default function Header() {
     <div className="flex flex-row items-center justify-between bg-whiteDetail rounded-[50px]">
       <div className="flex flex-col gap-24 items-center">
         <div className="text-center mx-24 flex flex-col gap-7">
-          <h1 className="text-6xl font-bold text-blackTitle">
+          <h1 className="text-4xl lg:text-6xl font-bold text-blackTitle">
             Welcome <br></br> to PetFriend
           </h1>
           <h3 className="text-4xl">Let’s find a lovely pet or a friend</h3>
