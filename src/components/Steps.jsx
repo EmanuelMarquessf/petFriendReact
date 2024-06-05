@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <div className="flex flex-col gap-20">
+    <div id="steps" className="flex flex-col gap-20">
       <div className="flex flex-col gap-2">
         <h1 className="font-bold text-5xl">Adoption Process</h1>
         <span className="font-extralight text-2xl lg:text-3xl">How can i adopt a pet?</span>

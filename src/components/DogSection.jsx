@@ -2,22 +2,22 @@
 
 import React, { useState, useEffect } from "react";
 
-import Banner from "./CatBanner";
-import Card from "../components/Card";
+import Banner from "./DogBanner";
+import Card from "./Card";
 
-import fetchCats from "../hooks/catApiUtils";
+import fetchDogs from "../hooks/dogApiUtils";
 
-export default function CatSection() {
-  const [cats, setCats] = useState([]);
+export default function DogSection() {
+  const [dogs, setDogs] = useState([]);
   useEffect(() => {
-    fetchCats().then((result) => {
-      setCats(result);
+    fetchDogs().then((result) => {
+      setDogs(result);
     });
   }, []);
 
-  const moreCats = () => {
-    fetchCats().then((cats) => {
-      setCats(cats);
+  const moreDogs = () => {
+    fetchDogs().then((dogs) => {
+      setDogs(dogs);
     });
   };
 
@@ -34,20 +34,20 @@ export default function CatSection() {
           </div>
           <button
             className="bg-whiteDetail rounded-full w-28 h-16 shadow-md"
-            onClick={moreCats}
+            onClick={moreDogs}
           >
-            New Cats
+            New Dogs
           </button>
         </div>
         <div className="flex flex-row flex-wrap gap-10">
-          {cats.map((cat) => (
+          {dogs.map((dog) => (
             <Card
-              key={cat.id}
-              name={cat.name}
-              sex={cat.sex}
-              age={cat.age}
-              image={cat.url}
-              vaccine={cat.vaccine}
+              key={dog.id}
+              name={dog.name}
+              sex={dog.sex}
+              age={dog.age}
+              image={dog.url}
+              vaccine={dog.vaccine}
             ></Card>
           ))}
         </div>

@@ -25,4 +25,5 @@ async function fetchCats() {
   return cats;
 }
 
+
 export default fetchCats;

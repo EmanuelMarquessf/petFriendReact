@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Carrousel from "../components/Carrousel";
 import Steps from "../components/Steps";
 import CatSection from "../components/CatSection";
+import DogSection from "../components/DogSection";
 export default function Home() {
   
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Carrousel />
         <Steps />
         <CatSection />
+        <DogSection />
       </main>
     </>
   );

@@ -12,7 +12,7 @@ export default function Header() {
             for the family.
           </p>
         </div>
-        <button className="bg-blueDetail px-9 py-4 text-whiteDetail font-bold text-2xl rounded-full">Get Started</button>
+        <a href="#steps" className="bg-blueDetail px-9 py-4 text-whiteDetail font-bold text-2xl rounded-full">Get Started</a>
       </div>
       <div
         className="order-1 lg:order-2 w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[1050px] lg:h-[800px] bg-cover bg-center rounded-full lg:rounded-l-[600px] lg:rounded-r-[50px]"
